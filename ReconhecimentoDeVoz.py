@@ -22,6 +22,9 @@ def ouvir_microfone():
         if "navegador" in frase:
             os.system('start Chrome.exe')
             return False
+        if "word" in frase:
+            os.system('start Word.exe')
+            return False
     except sr.UnknownValueError:
         print("Não entendi o que você disse. Tente novamente.")
     except sr.RequestError as e:
